@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback</title>
+  <style>
+    input, select, textarea { width: 100%; margin: 10px 0; padding: 8px; }
+    .error { color: red; }
+    .fee, #confirm { color: green; font-weight: bold; }
+    img { width: 200px; cursor: pointer; transition: 0.3s; }
+    .enlarge { transform: scale(1.5); }
+  </style>
+</head>
+<body>
+  <form onsubmit="submitForm(event)">
+    <h3>Event Feedback</h3>
+    <input type="text" id="phone" placeholder="Phone" onblur="validatePhone()" required>
+    <div id="err" class="error"></div>
+
+    <select onchange="showFee(this)">
+      <option value="">Select Event</option>
+      <option value="20">Music Night</option>
+      <option value="15">Art Workshop</option>
+      <option value="10">Charity Run</option>
+    </select>
+    <div id="fee" class="fee"></div>
+
+    <textarea id="msg" placeholder="Feedback" onkeydown="countChar()"></textarea>
+    <div id="count">Characters: 0</div>
+
+    <img src="event.jpg" ondblclick="this.classList.toggle('enlarge')">
+
+    <button type="submit">Submit</button>
+    <div id="confirm" class="fee"></div>
+  </form>
+
+  <script>
+    function validatePhone() {
+      const val = document.getElementById('phone').value;
+      document.getElementById('err').textContent = /^\d{10}$/.test(val) ? "" : "Enter 10-digit phone number.";
+    }
+
+    function showFee(sel) {
+      document.getElementById('fee').textContent = sel.value ? "Fee: $" + sel.value : "";
+    }
+
+    function countChar() {
+      const len = document.getElementById('msg').value.length;
+      document.getElementById('count').textContent = "Characters: " + len;
+    }
+
+    function submitForm(e) {
+      e.preventDefault();
+      if (!document.getElementById('err').textContent)
+        document.getElementById('confirm').textContent = "Feedback submitted. Thank you!";
+    }
+  </script>
+</body>
+</html>
 
