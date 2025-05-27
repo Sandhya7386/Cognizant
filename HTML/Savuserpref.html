@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Preferences</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    select, button { margin: 10px 0; padding: 8px; font-size: 16px; }
+  </style>
+</head>
+<body>
+
+  <h2>Select Your Preferred Event</h2>
+
+  <select id="eventSelect">
+    <option value="">-- Select an event --</option>
+    <option value="music">Music Night</option>
+    <option value="art">Art Workshop</option>
+    <option value="cleanup">Community Clean-up</option>
+  </select>
+
+  <br />
+
+  <button id="clearBtn">Clear Preferences</button>
+
+  <script>
+    const select = document.getElementById('eventSelect');
+    const clearBtn = document.getElementById('clearBtn');
+
+    // Load preference from localStorage on page load
+    window.onload = () => {
+      const savedEvent = localStorage.getItem('preferredEvent');
+      if (savedEvent) {
+        select.value = savedEvent;
+      }
+    };
+
+    // Save preference to localStorage on selection change
+    select.addEventListener('change', () => {
+      if (select.value) {
+        localStorage.setItem('preferredEvent', select.value);
+        // You can also save something to sessionStorage here if needed
+        sessionStorage.setItem('tempEvent', select.value);
+      }
+    });
+
+    // Clear both storages when button clicked
+    clearBtn.addEventListener('click', () => {
+      localStorage.removeItem('preferredEvent');
+      sessionStorage.removeItem('tempEvent');
+      select.value = "";
+      alert("Preferences cleared!");
+    });
+  </script>
+
+</body>
+</html>
 
