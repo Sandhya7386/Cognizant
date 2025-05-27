@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Event Promo Video</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    #message { margin-top: 10px; color: green; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <h2>Event Promo Video</h2>
+
+  <video id="promoVideo" width="480" controls oncanplay="showReadyMessage()">
+    <source src="promo.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div id="message"></div>
+
+  <script>
+    function showReadyMessage() {
+      document.getElementById('message').textContent = "Video ready to play";
+    }
+
+    // Warn if user tries to leave before finishing
+    window.onbeforeunload = function (e) {
+      e = e || window.event;
+      // Modern browsers show a generic message
+      if (true) { // You can add your own logic here to check form status
+        e.preventDefault();
+        e.returnValue = '';
+        return '';
+      }
+    };
+  </script>
+
+</body>
+</html>
 
