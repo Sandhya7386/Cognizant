@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Debugging Example</title>
+  <style>
+    #box {
+      width: 150px;
+      height: 150px;
+      background-color: teal;
+      margin: 50px auto;
+      text-align: center;
+      line-height: 150px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="box">Click me</div>
+
+  <script>
+    // Log when script loads
+    console.log('Script loaded');
+
+    const box = document.getElementById('box');
+
+    // Set a breakpoint on this function in DevTools to step through click handling
+    function handleClick(event) {
+      console.log('Box clicked');
+      let currentColor = box.style.backgroundColor;
+      console.log('Current color:', currentColor);
+      
+      // Toggle color between teal and tomato
+      if (currentColor === 'tomato') {
+        box.style.backgroundColor = 'teal';
+      } else {
+        box.style.backgroundColor = 'tomato';
+      }
+    }
+
+    // Attach click event listener
+    box.addEventListener('click', handleClick);
+
+    // You can also try modifying styles live using Inspect Element!
+  </script>
+
+</body>
+</html>
 
