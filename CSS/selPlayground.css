@@ -1,1 +1,58 @@
+/* ================================
+   Reset and Global Styles
+   ================================ */
+
+/* Universal selector: Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================================
+   Element Selectors
+   ================================ */
+
+/* Style all <h2> elements */
+h2 {
+  font-size: 28px;
+  color: darkslategray;
+  margin-bottom: 12px;
+}
+
+/* ================================
+   ID Selector
+   ================================ */
+
+/* Style for banner/header with specific ID */
+#mainHeader {
+  background-color: #004085;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ================================
+   Class Selector
+   ================================ */
+
+/* Style for event container cards */
+.eventCard {
+  background-color: #e9ecef;
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
+/* ================================
+   Grouping Selectors
+   ================================ */
+
+/* Style <h3> and <p> together */
+h3, p {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  margin-bottom: 10px;
+}
 
