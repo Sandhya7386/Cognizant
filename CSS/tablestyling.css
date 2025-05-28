@@ -1,1 +1,33 @@
+/* ========================================
+   TABLE STYLING
+   ======================================== */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Table header */
+th {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+/* Table data cells */
+td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+/* Zebra striping for rows */
+tr:nth-child(even) td {
+  background-color: #e9ecef;
+}
 
