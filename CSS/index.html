@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Inclusion Methods</title>
+
+  <!-- Internal CSS: Embedded styles for body background -->
+  <style>
+    /* Body styles */
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Inline style: Makes this heading red -->
+  <h1 style="color: red;">This is an Inline Styled Heading</h1>
+
+  <h2>This is another heading using external CSS</h2>
+  <p>This paragraph is styled externally for consistency.</p>
+
+</body>
+</html>
+/* Header styles */
+h2 {
+  color: navy;
+  font-size: 24px;
+}
+
+/* Paragraph styles */
+p {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Utility classes (Reusable styles) */
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
 
