@@ -1,1 +1,46 @@
+/* ================================
+   Body Styling
+   ================================ */
+
+/* Fallback background color + background image */
+body {
+  background-color: #e0f7fa; /* Fallback HEX color */
+  background-image: url('images/cityscape.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: rgba(33, 37, 41, 0.9); /* Semi-transparent dark text */
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================================
+   Section Headers with Gradient
+   ================================ */
+
+/* Gradient background for section headers */
+.section-header {
+  background: linear-gradient(90deg, #007BFF, #00C9A7);
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* ================================
+   Text Styling
+   ================================ */
+
+/* Use HEX for headers */
+h1, h2 {
+  color: #1a237e; /* Dark blue */
+}
+
+/* Use RGBA for subtext */
+.subtext {
+  color: rgba(0, 0, 0, 0.6); /* Light black/gray */
+  font-size: 16px;
+}
 
