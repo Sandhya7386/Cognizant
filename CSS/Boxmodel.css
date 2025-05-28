@@ -1,1 +1,41 @@
 
+/* ========================================
+   EVENT CARD: Spacing with margin, padding, border
+   ======================================== */
+.eventCard {
+  background-color: #e9ecef;
+  border: 2px solid #ccc;    /* Visible border */
+  padding: 20px;             /* Space inside the box */
+  margin: 16px 0;            /* Space outside the box */
+  border-radius: 8px;
+}
+
+/* ========================================
+   FORM FIELD: Highlight selected inputs with outline
+   ======================================== */
+input:focus, textarea:focus, select:focus {
+  outline: 3px solid #007BFF; /* Bright blue outline */
+  outline-offset: 2px;         /* Space between element and outline */
+}
+
+/* ========================================
+   VISIBILITY COMPARISON
+   ======================================== */
+
+/* Element hidden but occupies space */
+.visibility-hidden {
+  visibility: hidden;
+  background-color: lightgray;
+  padding: 10px;
+  border: 1px solid #999;
+  margin: 10px 0;
+}
+
+/* Element removed from layout (no space taken) */
+.display-none {
+  display: none;
+  background-color: lightcoral;
+  padding: 10px;
+  border: 1px solid #999;
+  margin: 10px 0;
+}
