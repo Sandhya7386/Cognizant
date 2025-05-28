@@ -1,1 +1,112 @@
+/* ===============================
+   BASE STYLES (Desktop & Tablets)
+   =============================== */
+
+/* Navigation menu - horizontal flex */
+ul.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 1vh 2vw;
+  display: flex;
+  gap: 2vw;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+/* Navigation links */
+ul.nav-menu li a {
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1vh 1vw;
+  font-size: 1.1rem;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+ul.nav-menu li a:hover {
+  color: #007BFF;
+}
+
+/* Layout container */
+.main-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 3vw;
+  padding: 2vh 5vw;
+}
+
+/* Content and sidebar */
+.content {
+  flex: 3;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #e9ecef;
+  padding: 2vh 2vw;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+/* Responsive images */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Body */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fefefe;
+}
+
+/* ===============================
+   MEDIA QUERY: Screens < 768px
+   =============================== */
+@media (max-width: 768px) {
+  /* Stack nav links vertically */
+  ul.nav-menu {
+    flex-direction: column;
+    gap: 1vh;
+    padding: 1vh 1vw;
+  }
+
+  ul.nav-menu li a {
+    font-size: 1rem;
+    padding: 1vh;
+  }
+
+  /* Stack content and sidebar */
+  .main-container {
+    flex-direction: column;
+    padding: 1vh 3vw;
+  }
+
+  /* Sidebar full width */
+  .sidebar {
+    width: 100%;
+    flex: none;
+    margin-top: 2vh;
+    font-size: 0.95rem;
+  }
+
+  /* Reduce body font size */
+  body {
+    font-size: 16px;
+  }
+
+  /* Resize images */
+  .responsive-img {
+    width: 90vw;
+  }
+}
 
