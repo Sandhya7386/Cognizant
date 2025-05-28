@@ -1,1 +1,71 @@
+/* ================================
+   Global Styles
+   ================================ */
+
+/* Set base font and background for the body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================================
+   Header Styles
+   ================================ */
+
+/* Style for main heading (h1) */
+h1 {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+/* Style for subheading (h2) */
+h2 {
+  font-size: 28px;
+  color: navy;
+  margin-top: 10px;
+}
+
+/* ================================
+   Paragraph Styles
+   ================================ */
+
+/* General paragraph style */
+p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* ================================
+   Buttons
+   ================================ */
+
+/* Style for main CTA (Call To Action) button */
+.cta-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Hover effect for CTA button */
+.cta-button:hover {
+  background-color: #0056b3;
+}
+/* Center text */
+.text-center {
+  text-align: center;
+}
+
+/* Margin top utility */
+.mt-20 {
+  margin-top: 20px;
+}
 
