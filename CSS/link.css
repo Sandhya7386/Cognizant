@@ -1,0 +1,173 @@
+/* ========================================
+   IMPORT GOOGLE FONTS
+   ======================================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:ital,wght@1,600&display=swap');
+
+/* ========================================
+   RESET AND GLOBAL STYLES
+   ======================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #e0f7fa;
+  background-image: url('images/cityscape.jpg');
+  background-size: cover;
+  background-position: center;
+  color: rgba(33, 37, 41, 0.9);
+  padding: 20px;
+}
+
+/* ========================================
+   TYPOGRAPHY
+   ======================================== */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: darkslategray;
+  margin-bottom: 12px;
+}
+
+h3, p {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  color: rgba(51, 51, 51, 0.85);
+  margin-bottom: 20px;
+}
+
+.note {
+  font-style: italic;
+  color: #555;
+}
+
+/* ========================================
+   HEADER / BANNER
+   ======================================== */
+#mainHeader {
+  background-color: #004085;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ========================================
+   SECTION HEADERS WITH GRADIENT
+   ======================================== */
+.section-header {
+  background: linear-gradient(90deg, #007BFF, #00C9A7);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+.cta-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* ========================================
+   EVENT CARDS (Class Selector)
+   ======================================== */
+.eventCard {
+  background-color: #e9ecef;
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
+/* ========================================
+   LINKS
+   ======================================== */
+a:link {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #5a5a5a;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #ff4500;
+}
+
+/* ========================================
+   LISTS
+   ======================================== */
+/* Content list */
+ul.content-list {
+  list-style-type: square;
+  list-style-position: inside;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+ul.content-list li {
+  padding: 8px 0;
+  margin-left: 10px;
+}
+
+/* Navigation menu */
+ul.nav-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+ul.nav-menu li {
+  padding: 10px 15px;
+  margin: 0;
+}
+
+ul.nav-menu li a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
